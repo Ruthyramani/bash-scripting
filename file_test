@@ -1,0 +1,18 @@
+#!/bin/bash
+#this is to check for conditions
+echo -e "enter the name of the file: \c"
+read file_name
+
+if [ -e $file_name ]
+then
+	echo "$file_name found"
+else
+	echo "$file_name not found"
+fi
+# -e is to check if the file exists, while the -f is to check if the file exits and its a regular file
+# -d is to check for directories
+# there are two types of files, block special -b and character special file -c.
+# to check if the file is empty -s
+# to check if your file has the read permission -r
+# to check the write permission -w
+# to check the execute permission -x
